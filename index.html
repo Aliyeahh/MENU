@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+body{
+     background-image: url('Huhu.jpg');
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     margin: 0;
+     padding: 0;
+   }
+  main {
+      flex: 1;
+      padding: 20px 0;
+    }
+
+      .pink-star-heading {
+      font-family: 'Georgia', serif;
+      font-size: 60px;
+      font-style: italic;
+      background-image: url('Fruities.jpg')
+      }
+     h2{
+      font-family: 'Georgia', serif;
+      font-size: 24px;
+      font-style: italic;
+    }
+  th{
+    background-color: #2f77a3;
+  }
+  td.{
+    background-image: url("black.jpg");
+      color: white;
+      background-color: #6b2ab2;
+      border-color: black;
+      border-style: inset;
+    }
+    tbody {
+      color: black;
+      background-color: #91b0c4;
+      border-color: black;
+      border-style: inset;
+    }
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .search-bar input {
+      width: 300px;
+      padding: 5px 10px;
+      border: 1px solid #800e0e;
+      border-radius: 5px 0 0 5px;
+    }
+    .search-bar button {
+      background-color: #800e0e;
+      color: white;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      padding: 5px 10px;
+    }
+    .highlighted {
+      background-image: url('Grn.jpg');
+      background-size: cover;
+      background-position: center;
+}
+    }
+  
+  </style>
+</head>
+<body>
+  <Center><h class="pink-star-heading">ALIYAH'S RESTO MENU</h></Center>
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button onclick="searchTable()">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+    <div class="table-responsive-sm">
+      <table class="table" id="myTable">
+        <thead>
+          <tr>
+            <th>VoiceOver</th>
+            <th>Costumer Name</th>
+            <th>Name Item</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+            <td onclick="this.classList.toggle('pastel-green');">2101</td>
+            <td>Editha</td>
+            <td>Grilled Burger</td>
+            <td>1pc</td>
+            <td>88php</td>
+            <td>Dine In</td>
+         </tr>
+         <tr>
+           <td style="background-color: #e1e5eb;">2111</td>
+           <td style="background-color: #e1e5eb;">Hugh</td>
+           <td style="background-color: #e1e5eb;">Buckwheat Noodles</td>
+           <td style="background-color: #e1e5eb;">1pc</td>
+           <td style="background-color: #e1e5eb;">90php</td>
+           <td style="background-color: #e1e5eb;">Dine in</td>
+         </tr>
+         <tr>
+           <td>2125</td>
+           <td>Alia</td>
+           <td>Miso Ramen</td>
+           <td>3pcs</td>
+           <td>306php</td>
+           <td>Dine In</td>
+         </tr>
+         <tr>
+           <td style="background-color: #e1e5eb;">2118</td>
+           <td style="background-color: #e1e5eb;">Elain</td>
+           <td style="background-color: #e1e5eb;">Omurice</td>
+           <td style="background-color: #e1e5eb;">3pcs</td>
+           <td style="background-color: #e1e5eb;">306php</td>
+           <td style="background-color: #e1e5eb;">Dine In</td>
+         <tr>
+           <td>2116</td>
+           <td>Mico</td>
+           <td>Fruit Salad</td>
+           <td>1pc</td>
+           <td>102php</td>
+           <td>Take Out</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2227</td>
+          <td style="background-color: #e1e5eb;">Troy</td>
+          <td style="background-color: #e1e5eb;">Chicken Cartilage Skewer</td>
+          <td style="background-color: #e1e5eb;">6pcs</td>
+          <td style="background-color: #e1e5eb;">336php</td>
+          <td style="background-color: #e1e5eb;">Dine In</td>
+        </tr>
+        <tr>
+          <td>2231</td>
+          <td>Chariz</td>
+          <td>Teriyaki Chicken</td>
+          <td>5pcs</td>
+          <td>305php</td>
+          <td>Dine In</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2037</td>
+          <td style="background-color: #e1e5eb;">Leo</td>
+          <td style="background-color: #e1e5eb;">Buri Sushi</td>
+          <td style="background-color: #e1e5eb;">4pcs</td>
+          <td style="background-color: #e1e5eb;">588php</td>
+          <td style="background-color: #e1e5eb;">Take Out</td>
+        </tr>
+        <tr>
+          <td>2029</td>
+          <td>Elyssa</td>
+          <td>Chessy Prawn Rolls</td>
+          <td>5pcs</td>
+          <td>400php</td>
+          <td>Dine In</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2231</td>
+          <td style="background-color: #e1e5eb;">Annalyn</td>
+          <td style="background-color: #e1e5eb;">Teriyaki Chicken</td>
+          <td style="background-color: #e1e5eb;">2pcs</td>
+          <td style="background-color: #e1e5eb;">122php</td>
+          <td style="background-color: #e1e5eb;">Take Out</td>
+        </tr>
+        <tr>
+          <td>2321</td>
+          <td>Cali</td>
+          <td>Iced Sake</td>
+          <td>1pc</td>
+          <td>90php</td>
+          <td>Dine In</td>
+        </tr>
+        <tr>
+          <td>2040</td>
+          <td>Cali</td>
+          <td>Fish Nabe</td>
+          <td>1pc</td>
+          <td>140php</td>
+          <td>Dine In</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2027</td>
+          <td style="background-color: #e1e5eb;">Anna</td>
+          <td style="background-color: #e1e5eb;">Tomato Pasta</td>
+          <td style="background-color: #e1e5eb;">1pc</td>
+          <td style="background-color: #e1e5eb;">88php</td>
+          <td style="background-color: #e1e5eb;">Dine In</td>
+        </tr>
+        <tr>
+          <td>2345</td>
+          <td>Shane</td>
+          <td>Grape Sour</td>
+          <td>2pcs</td>
+          <td>216php</td>
+          <td>Take Out</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2028</td>
+          <td style="background-color: #e1e5eb;">Bella</td>
+          <td style="background-color: #e1e5eb;">Tonkatsu</td>
+          <td style="background-color: #e1e5eb;">6pcs</td>
+          <td style="background-color: #e1e5eb;">552php</td>
+          <td style="background-color: #e1e5eb;">Dine In</td>
+        </tr>
+        <tr>
+          <td>2227</td>
+          <td>Cha</td>
+          <td>Chicken Cartilage Skewer</td>
+          <td>8pcs</td>
+          <td>448php</td>
+          <td>Dine In</td>
+        </tr>
+        <tr>
+          <td>2456</td>
+          <td>Cha</td>
+          <td>Orange Juice</td>
+          <td>4pcs</td>
+          <td>176php</td>
+          <td>Dine In</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2035</td>
+          <td style="background-color: #e1e5eb;">Emerald</td>
+          <td style="background-color: #e1e5eb;">Suzuki Sashimi</td>
+          <td style="background-color: #e1e5eb;">4pcs</td>
+          <td style="background-color: #e1e5eb;">624php</td>
+          <td style="background-color: #e1e5eb;">Dine In</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2458</td>
+          <td style="background-color: #e1e5eb;">Emerald</td>
+          <td style="background-color: #e1e5eb;">Matcha Au Lait</td>
+          <td style="background-color: #e1e5eb;">4pcs</td>
+          <td style="background-color: #e1e5eb;">314php</td>
+          <td style="background-color: #e1e5eb;">Dine In</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2459</td>
+          <td style="background-color: #e1e5eb;">Emerald</td>
+          <td style="background-color: #e1e5eb;">Ginjo</td>
+          <td style="background-color: #e1e5eb;">2pcs</td>
+          <td style="background-color: #e1e5eb;">164php</td>
+          <td style="background-color: #e1e5eb;">Dine In</td>
+        </tr>
+        <tr>
+          <td>2224</td>
+          <td>Gojo</td>
+          <td>Sakura & Berry</td>
+          <td>2pcs</td>
+          <td>128php</td>
+          <td>Dine In</td>
+        </tr>
+        <tr>
+          <td>2460</td>
+          <td>Gojo</td>
+          <td>Peach Juice</td>
+          <td>2pcs</td>
+          <td>186php</td>
+          <td>Dine In</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2125</td>
+          <td style="background-color: #e1e5eb;">Nami</td>
+          <td style="background-color: #e1e5eb;">Miso Ramen</td>
+          <td style="background-color: #e1e5eb;">1pc</td>
+          <td style="background-color: #e1e5eb;">102php</td>
+          <td style="background-color: #e1e5eb;">Take Out</td>
+        </tr>
+        <tr>
+          <td>2118</td>
+          <td>Tanjiro</td>
+          <td>Omurice</td>
+          <td>3pcs</td>
+          <td>306php</td>
+          <td>Take Out</td>
+        </tr>
+        <tr>
+          <td>2462</td>
+          <td>Tanjiro</td>
+          <td>Sprite</td>
+          <td>3pcs</td>
+          <td>117php</td>
+          <td>Take Out</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2070</td>
+          <td style="background-color: #e1e5eb;">Aliuh</td>
+          <td style="background-color: #e1e5eb;">Teppanyaki Pasta</td>
+          <td style="background-color: #e1e5eb;">1pc</td>
+          <td style="background-color: #e1e5eb;">84php</td>
+          <td style="background-color: #e1e5eb;">Dine In</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2078</td>
+          <td style="background-color: #e1e5eb;">Aliuh</td>
+          <td style="background-color: #e1e5eb;">Meitanko Hand Roll</td>
+          <td style="background-color: #e1e5eb;">1pc</td>
+          <td style="background-color: #e1e5eb;">129php</td>
+          <td style="background-color: #e1e5eb;">Dine In</td>
+        </tr>
+        <tr>
+          <td style="background-color: #e1e5eb;">2467</td>
+          <td style="background-color: #e1e5eb;">Aliuh</td>
+          <td style="background-color: #e1e5eb;">Milk Cassis Liqueur</td>
+          <td style="background-color: #e1e5eb;">1pc</td>
+          <td style="background-color: #e1e5eb;">90php</td>
+          <td style="background-color: #e1e5eb;">Dine In</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+<div>
+  <audio controls autoplay>
+  <source src="Ghibli_1_1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+</div>
+  <script>
+    
+    function searchTable() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("searchInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (var j = 0; j < td.length; j++) {
+          if (td[j].textContent.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+            break;
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+     <script>
+    const tableRows = document.querySelectorAll('tbody tr');
+
+    tableRows.forEach(row => {
+      row.addEventListener('click', () => {
+        // Toggle the 'highlighted' class on the clicked row
+        row.classList.toggle('highlighted');
+      });
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
